@@ -70,6 +70,8 @@ cd ~/$FNAME
 if wget $FETCH'/versions/beta1.sh'; then
      mv 'beta1.sh' 'simmail.sh'
      echo -e "[Desktop Entry]\nType=Application\nVersion=beta1\nName=Simple Mail\nComment=Simple Mail Linux\nPath=~/.simmailservice\nExec=./simmail.sh\nTerminal=false" > ~/.local/share/applications/SimpleMail.desktop
+     chmod +x simmail.sh
+     chmod +x '~/.local/share/applications/SimpleMail.desktop'
 else
      echo "An error occured, please check your installer or the servers"
      echo "Hotfix, install the newest version"
