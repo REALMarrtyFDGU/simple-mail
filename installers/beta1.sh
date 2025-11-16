@@ -67,7 +67,7 @@ else
      echo "Email-ID is not able to set. Setup aborted"
 fi
 cd ~/$FNAME
-if wget $FETCH'/beta1.sh'; then
+if wget $FETCH'/versions/beta1.sh'; then
      mv 'installbeta1.sh' 'simmail.sh'
      echo -e "[Desktop Entry]\nType=Application\nVersion=beta1\nName=Simple Mail\nComment=Simple Mail Linux\nPath=~/.simmailservice\nExec=./simmail.sh\nTerminal=false" > ~/.local/share/applications/SimpleMail.desktop
 else
